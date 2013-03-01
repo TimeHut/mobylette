@@ -187,7 +187,7 @@ module Mobylette
     # not skip_xhr_requests.
     #
     def stop_processing_because_xhr?
-      if request.xhr? && self.mobylette_options[:skip_xhr_requests]
+      if (request.xhr? || request.format.json?) && self.mobylette_options[:skip_xhr_requests]
         true
       else
         false
