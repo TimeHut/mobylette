@@ -1,5 +1,14 @@
 = Change Log
 
+== 3.5
+	* Support for rails 4
+
+== 3.4.1
+	* Reverting changes of the 3.4.1
+
+== 3.4.0
+	* Moving all methods to be private
+
 == 3.3.2
   * Removing debugger from Gemfile
   * Adding support to PlayBook as a mobile user agent
